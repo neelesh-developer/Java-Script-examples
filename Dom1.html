@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title></title>
+        <script>
+           function operate(){
+            document.getElementById("valtext").value = "already entered";
+            document.getElementById("intext").innerHTML = "Hey Ths is a sys generated messsage";
+           }
+
+           function Doperate(){
+            
+            document.getElementById("valtext").value = "";
+            document.getElementById("intext").innerHTML = "";
+           }
+        </script>
+    </head>
+    <body>
+        <h1>DOM ELEMENTS</h1><br><br>
+        <input type="text" placeholder="enter some text" id="valtext" /><br> <br>
+        <h3 id="intext"></h3><br><br>
+        <button onclick="operate()"> Click Me </button><br><br>
+
+        <button ondblclick="Doperate()"> Double Click Me </button>
+    </body>
+</html>
