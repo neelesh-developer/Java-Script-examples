@@ -1,0 +1,158 @@
+
+HTML -- Hyper Text Markup Language  -- develop web pages
+
+.html
+
+head section  -- carry additional information needed for html ex : css properties, js programming
+
+body section  -- we wish to show in browser
+
+By Default html preserves only 1 character space in browser
+
+&nbsp;   -- which generates 1 character space in browser
+
+<br>  -- html tag which breaks content to next line 
+
+<hr>  -- we get horizontal line across the browser
+
+Self Closed Tags : html tags for which closed tag is not needed
+ex : <br>, <hr>, <img />, <input />
+
+Heading Tags : when we wish to highlight content in browser
+ which are from h1 to h6 
+ gradually font size will be reduced from h1 to h6
+
+
+paragraph format  -- <p>  </p>
+
+hyper links -- <a href="">  </a>
+
+ a -- stands for anchor tag
+ and href is an attribute defined on anchor tag to provide informaiton regarding to which web pages we wish to navigate when user clicks on hyper link
+
+What is meant by attribute in html ?
+  -- Attributes are additional properties defined on html tags to provide information needed for html tags
+
+
+loading images to browser
+
+<img src="" width="" height="" alt=""  />
+
+  src -- attribute to provide location of image
+  width  -- horizontally how much space image needs to occupy
+  height -- vertically how much space image needs to occupy
+  alt -- when we are not able to load image based on info provided in src attribute then alt attribute message will display as alternative
+
+
+list tags  -- to display content in list format
+ ol  -- ordered list
+ ul  -- unOrdered List
+
+ li -- List Item
+
+Loading data in terms of table format 
+<table>  </table>  
+<thead>  </thead>  -- heading portion of table 
+<tbody   </tbody>  -- actual content of table 
+<tfoot>  </tfoot>  -- conclusion part of table 
+
+ <tr>  </tr>  -- show data in terms of row format
+
+ <td>  </td> -- show data in terms of column format
+ <th>  </th> -- show data in terms of column format
+
+
+ td  -- normal font size
+ th -- bold font size and also content to be aligned to center of cell
+
+ colspan -- to allow single cell to occupy for multiple columns sapce in browser
+
+ rowspan -- to allow single cell to occupy for multiple rows space in browser
+
+
+Non Input type of html elements -- 
+   --> html elements which are not starting with input tag
+    ex : <p> <table> <a> <h2>
+   --> ALl non input type of html elements holds data using innerHTML
+
+   innerHTML -- content we write in between open tag and closed tag
+   <h2> Heading Content </h2>
+
+Input type of html elements -- 
+  --> html elements which are starting with input tag
+    ex : <input />
+  --> input type of html elements holds data using value attribute
+
+
+We use input type of html elements when we wish to read data from user:
+
+<input type="text" placeholder="Enter UserName" value="" id="elem1" class="elems" name="" />
+
+type  -- is an attribute which defines what type of input html element it is
+placeholder -- defines clue to the end user reg what to be entered in the html element 
+  placeholder content will be displayed in browser only when element content in empty
+value  -- all input type of html elements holds data using value attribute
+id  -- for unique identification of html element at client side
+name -- for unique identification of html element at server side
+class -- to identify group of html elements at client side
+
+type="password"  -- content we enter will be displayed with bullet symbols
+
+When to use checkbox
+ -- when we wish to let user to choose multiple options among available options 
+<input type="checkbox" value="java" />Java
+ content written beside to element will be displayed in browser beside to checkbox
+ content written with value attribute will be carried to server when user check the checkbox and submit the page
+
+When to use radio buttons
+  -- when we wish to let user to choose only 1 option among available options
+
+By default radio buttons also allow you to choose multiple options
+
+when we wish to allow user to choose only 1 option with help of radio buttons then 
+  we have to maintain common value for name attribute of all radio type of html elements
+
+Generate dropdowns :
+  <select>
+     <option>  </option>  -- each option tag will generate 1 option in the dropdown
+  </select>  
+
+
+<input type="number" placeholder="Score" min="0" max="100" step="5" />
+
+  min and max -- attributes to convey range of data to be entered in the text box
+  step -- every time when we click on up arrow or down arrow at what rate we wish to increase or decrease the content in the text box
+
+
+
+type="date" -- will allow user to select particular date from the calendar
+type="month" -- will allow user to select particular month from calendar
+type="week"  -- will allow user to select particular week from calendar
+
+<form>  -- form tag is used to carry information regarding to which server side program we wish to submit the request
+
+ action attribute -- to carry information reg to which server side program we wish to submit request
+ method attribute -- to define what type of request are we submitting
+
+ div
+ span
+ label
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
