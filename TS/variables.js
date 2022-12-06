@@ -1,0 +1,16 @@
+var course = "angular";
+//course = 90;
+var rollNo = 90;
+var marks = 9.4;
+var result = true;
+var subjects = ["java", "html", "css", "angular"];
+var obj = { "rollNo": 90, "name": "harsha", "course": "java" };
+var aggr = 9.2;
+aggr = "java";
+console.log("value of course is " + course);
+console.log("value of rollNo is " + rollNo);
+console.log("value of marks is " + marks);
+console.log("value of result is " + result);
+console.log(subjects[0] + " -- " + subjects[1]);
+console.log(obj);
+console.log(aggr);

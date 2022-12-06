@@ -1,0 +1,55 @@
+
+TypeScript  -- object oriented way of writing javascript
+
+
+TypeScript is strictly type checked language -- so mentioning data type beside to variable is mandatory and so only respective type of data is allowed to assign
+
+Variables :
+  let variableName:dataType = value
+
+  ex: let id:number = 90;
+      let name:string = "java";
+
+
+ Functions :
+
+    function addNumbers(argumentName:argumentType):returnType{
+        //
+        //
+        return
+    }
+
+    --> unlike javascript, typescript wont allow more than expected no of input values
+    --> unlike javascript, typescript wont allow less than expected no of input values
+    --> unlike javascript, typescript wont allow values of unexpected argument types
+    --> unlike javascript, in typescript we do can define  optional parameters
+
+    Passing values for optional parameters is optional
+
+Iterables :
+
+  for of   -- during iteration process we get values 1 by 1
+
+  for in   -- during iteration process we get the index position into local variable
+
+
+Class : is a template to hold the properties of an entity
+
+Object : is the memory through which we store the data of an entity
+
+Relation between class and object ---- Class will always be defined only once and through taking class as reference we can create n no of objects
+
+
+
+constructor  -- is used to pass on the values to the object during object creation time itself
+
+
+
+
+
+
+
+
+
+
+

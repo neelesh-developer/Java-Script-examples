@@ -1,0 +1,6 @@
+Pre requisites to use ngModel
+    --> import FormsModule from '@angular/forms' in app.module.ts
+          import { FormsModule } from '@angular/forms';
+    --> update module name in the import section of module creation process
+<div [ngSwitch]="selectedCourse" [ngClass]="appliedClass" >
+   <div *ngSwitchCase="'html'">
