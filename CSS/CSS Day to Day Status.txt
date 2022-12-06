@@ -1,0 +1,120 @@
+
+CSS   -- Cascading Style Sheet  -- designing the web pages
+
+we use css to design web pages
+
+Different ways to apply css properties on html elements
+--------------------------------------------------------
+
+way 1 : inline styling -- applying css properties on html elements through using style attribute of html element
+
+<h2 style="color:red;background-color:green"> Hi Hello </h2>
+
+it results to duplicate code when we wish to apply same css properties on multiple html elements do its not recommended
+
+
+way 2 : style tag -- applying all css properties in the style tag of head section in html 
+
+way 3 : external css file -- write all css properties in 1 .css file and link that css file to html files
+
+<link href="nameOfCss" rel="stylesheet"> </link>
+
+
+Different ways to identify html elements to apply css properties  -- CSS SELECTORS
+----------------------------------------------------------------
+
+way 1 : through using # operator  --> When the requiremnt is to identify 1 particular element among all existing elements then we use its id attribute
+
+# operator is used to identify element through its id attribute in css
+
+
+way 2 : through using . operator --> when the requirement is to identify group of html elements among all existing elements on the page then we use its class attribute
+
+. operator is used to identify all elements through using its class attribute in css
+
+
+way 3 : through tag name --> when we wish to identify all specific type of html elements then we use this way
+
+
+way 4 : through using space operator  -- to identify only child elements through taking parent element as reference
+
+way 5 : through using , operator -- to identify elements in multiple ways
+ex : #elem, .headings, b   -- will identify all html elements with respect to below 
+   --> element with id attribute of elem
+   --> elements with class attribute of headings
+   --> elements with tag name of b
+
+way 6 : through using + operator --- to identify immediate html element after  reference element
+div+p  -- will identify only all p type of elements which are immediately present after div element
+
+
+################################################################
+
+Different css properties
+
+
+  BOX model -- every element will get 4 properties applied by default
+
+    content area  -- space occupied by content of element
+    padding       -- speaks reg space between border and content area
+    margin       -- speaks reg space between element and element
+    border       -- speaks reg width of border
+
+How to apply border for html element 
+  border: 2px solid red;
+
+  2px -- width of border
+  solid -- type of border ex : solid, dashed, dotted etc ...
+  red   -- color of border
+
+
+  padding:10px  -- 10px space getting applied on html element across all 4 directions
+
+  padding: 10px 20px 
+  -- 10px space across top and bottom directions and 20px space across left and right directions
+
+  padding: 10px 20px 30px 40px
+    -- these values will be applied in clock wise direction
+      top right bottom left
+
+
+  padding-left:30px
+
+  All above ways are applicable for margin css property as well
+
+
+Styling Text Data :
+
+   text-align -- to align text data inside the html element
+
+     text-align : left -- all the content inside the element gets aligned to left side
+     text-align : right -- all the content inside the element gets aligned to right side 
+     text-align : center - all the content inside the element gets aligned to center of element 
+     text-align : justify -- all the content will occupy same amount of space horizontally
+
+   line-height - to apply space between line to line 
+   letter-space , word-spacing, font-size, font-family, font-weight
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
