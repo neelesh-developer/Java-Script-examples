@@ -1,0 +1,239 @@
+
+
+Java Script : client side programming language
+
+Static web pages -- pages wont respond for any event we perform on the page
+ which we develop through html 
+
+Dynamic web pages -- pages which response for any event we perform on the page
+   
+   We make static web pages to behave as dynamic web pages through adding javascript programming on the page
+
+
+Variables
+
+
+
+Java is strictly type checked language -- 
+  int id = 90;
+
+where as 
+JavaScript is not strictly type checked langauge
+
+
+We can write js code in same html <script> open and closed tags
+
+or 
+
+we can write js code in separate file with an extension of .js and attach that .js file to html file using script tag
+
+
+Variables : var is a predefined keyword in javascript to define variables in javascript
+
+ var id = 90;  // syntax to create new variable
+
+   id = 98;
+
+   id = 40;
+
+console.log() ---> statement we use to write some content to browser console area from html
+
+Functions :  group of statements we write as a block to achieve functionality
+
+  function functionName(parameters){
+
+
+  }
+
+Note :
+--> Statements inside the function will get executed only when we call the function
+--> Once we write function, it can be called multiple times through passing diff set of input values 
+
+
+Debugging : analysing step by step how programming is getting executed
+
+breakpoint -- to stop the program execution at some statement
+
+when we click on curved shape arrow -- it moves line by line
+
+from a statement when we call a function then we have to click on down arrow so that it moves into the function and executes
+
+
+DOM --- Document Object Model
+
+  document -- predefined javascript object which carries complete information regarding the html file
+
+
+Event : In javascript, any action we perform on the page will be considered as an event on the page
+
+Event Handlers : these are predefined in javascript which recognises when ever some event happens on any html element in the page
+
+   onclick -- to recognize click event on the html element
+   ondblclick  -- to recognize when double click event happens on html element
+   onmouseover  -- to recognize when ever we hover mouse on a given html element
+   onmouseout  -- to recognize when ever we remove mouse from the html element
+   onfocus    -- to recognize when ever we focus on a given html element
+   onblur     -- to recognize when ever we blur the given html element
+
+   
+   onkeyup  -- to recognize every time we press and release key from text box
+   onload   -- to recognize when ever html document gets completely loaded in browser
+
+
+DOM Selectors
+
+  specific element - id
+    -- document.getElementById  
+
+  group of elements -- class
+    -- document.getElementsByClassName()
+
+  elements by tagName 
+     -- document.getElementsByTagName
+
+Through using below methods we can use all css selectors to identify html elements in javascript document object
+  querySelector  -- will pick only the first element among all the elements identified through using css selector
+
+  querySelectorAll  -- will identify all html elements identified through mentioned css selector
+
+
+Event Listeners  : programatically we can register events on html elements
+
+element.addEventListener(event, function() {
+  
+})
+
+#####################
+
+typeof   -- predefined function in javascript to know what type of data are we assigning to variable
+
+== and ===
+
+   ==   --> will check whether values assigned to variables are same or not irrespective of  data types
+
+   ===  --> will check both type of data and values assigned to variables
+
+
+operators
+ 1) arithmetic operators -- +, -, *, /, %, ++, --
+  23/10 --- quotient - 2
+  23%10 --- reminder - 3
+
+ 2) relational operators  --- >, <, >=, <=, ==, ===
+ Result of every relational operator is always a boolean value either true or false
+
+
+ 3) logical operators  --- && (AND), || (OR)
+ When the requirement is to check multiple conditions then we use logical operators
+
+ terinary operator
+
+   (condition) ? "stmt1" : "stmt2"
+
+   When the result of condition is true then stmt1 will execute
+   when the result of condition is false then stmt2 will execute
+
+
+
+pop up windows
+
+  alert  -- to show some message in the browser in terms of pop up window
+  confirm -- to show pop up message along with Ok and Cancel buttons in pop up window
+  prompt  -- to show pop up message and text box along with Ok and Cancel buttons in pop up window
+
+  Note :
+    --> confirm function returns true when we click on Ok button in pop up
+    --> confirm function returns false when we click on Cancel button in pop up 
+
+    --> prompt function returns true when enter data in textbox and click on Ok button in pop up
+    --> prompt function returns false when enter data in textbox and click on Cancel button in pop up
+
+
+
+
+
+
+storage areas  : when we wish to store some information as part of our web page in browser for some temporary period of time then we use storage areas
+
+  localStorage : once we write data to localStorage areas, data once written will be available even when i open the same web page in any new tab or in any new window
+
+  sessionStorage : once we write data to sessionStorage area, data once written will be available only in that tab
+
+  setItem -- to write data to storage area
+  getItem -- to read data from storage area
+
+
+
+timer functions
+
+  setTimeout  -- to execute some piece of code after some time period
+  setInterval  -- to execute some piece of code for every given time period
+
+
+#####################################
+  JSON  -- Java Script Object Notation
+
+.stringify  -- method to convert data from json format to String format
+.parse      -- method to convert data from String format to json format
+
+  In JSON, data will be represented through key and value pairs
+
+  when we wish to get data individually from json, we need to use . operator
+
+
+  Arrays  : to hold group of values we use arrays
+
+     index position : is used to identify each and every individual value among group of values
+      always index position starts from 0
+
+      push and pop methods will add and remove data from main array at ending index position
+      unshift and shift methods will add and remove data from main array at beginning index position
+
+slice and splice  -- are predefined functions in javascript to generate subgroup of values from main group
+
+  slice  -- will do copy and paste -- means wont disturb the data in original array variable
+  splice  -- will do cut and paste  -- means will remove the values from original array and form sub group
+
+
+predefined functions with respect to Math object 
+
+
+
+predefined functions with respect to Strings in javascript
+
+
+
+Page  -- we read data from the user and when we click on submit -- we have to persist in storage area and 
+show all the data dynamically in tabular format in other page 
+
+
+RegPage.html
+  fName
+  lName
+  userName
+  password
+  gender
+  mobile
+  email
+
+  submit  -- JSON
+
+  localStorage  -- students
+     var students = [];
+     students.add(st);
+
+
+ViewPage.html
+ onload 
+   students
+   
+
+
+
+
+
+
+
+
+
+

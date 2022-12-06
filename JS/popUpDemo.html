@@ -1,0 +1,32 @@
+<html>
+  <head>
+  	 <script>
+  	 	 function func1() {
+  	 	 	 alert("hi hello");
+  	 	 }
+  	 	 function func2() {
+  	 	 	var result = confirm("do you wish to continue");
+  	 	 	if(result){
+  	 	 		document.getElementById("msg").innerHTML = "you clicked on ok button";
+  	 	 	}else{
+  	 	 		document.getElementById("msg").innerHTML = "you clicked on cancel button";
+  	 	 	}
+  	 	 }
+  	 	 function func3() {
+  	 	 	 var content = prompt("please leave feedback here");
+
+  	 	 	 document.getElementById("msg").innerHTML = "you entered "+content;
+  	 	 }
+  	 </script>
+  </head>
+  <body>
+  	 <h2> Demo on pop up windows in javascript </h2>
+
+  	 <button onclick="func1()"> Alert Demo </button>  <br><br>
+  	 <button onclick="func2()"> Confirm Demo </button>  <br><br>
+  	 <button onclick="func3()"> Prompt Demo </button>
+
+
+  	 <h3 id="msg">  </h3>
+  </body>
+</html>

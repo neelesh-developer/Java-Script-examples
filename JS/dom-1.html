@@ -1,0 +1,30 @@
+<html>
+  <head>
+  	 <script>
+  	 	 function operate() {
+  	 	 	 var inputElement =  document.getElementById("elem1");
+  	 	 	 var nonInputElement = document.getElementById("elem2");
+
+  	 	 	 inputElement.value="virat";
+  	 	 	 nonInputElement.innerHTML = "kohli";
+  	 	 }
+  	 	 function remove() {
+  	 	 	  document.getElementById("elem1").value = "";
+  	 	 	  document.getElementById("elem2").innerHTML = "";
+  	 	 }
+  	 </script>
+  </head>
+  <body>
+  	  <h2> Demo on DOM object </h2>
+
+  	  <input type="text" placeholder="Enter First Name" id="elem1" />  
+
+  	  <h3 id="elem2">  </h3>
+
+  	  <button onclick="operate()"> Click Me  </button>
+
+  	  <hr>
+
+  	  <button ondblclick ="remove()"> Double Click </button>
+  </body>
+</html>

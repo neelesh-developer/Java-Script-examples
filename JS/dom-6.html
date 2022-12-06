@@ -1,0 +1,29 @@
+<html>
+  <head>
+  	<style>
+  		span {
+  			color:red;
+  		}
+  	</style>
+  	<script>
+  		function validate() {
+  			 var elems = document.getElementsByClassName("elems");
+  			 for(var i=0; i<elems.length; i++){
+  			 	  var elem = elems[i];
+  			 	  elem.style.border="2px solid red";
+  			 }
+  		}
+  	</script>
+  </head>
+  <body>
+  	 <span> * </span><input type="text" placeholder="Enter UserName" class="elems" /> <br><br>
+
+  	 <span> * </span><input type="password" placeholder="Enter Password" class="elems" />  <br><br>
+
+  	 <span> * </span><input type="text" placeholder="Enter First Name" class="elems" />  <br><br>
+
+  	 <input type="text" placeholder="Enter Last Name" />  <br><br>
+
+  	 <button onclick="validate()"> Click Me !! </button>
+  </body>
+</html>

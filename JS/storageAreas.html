@@ -1,0 +1,34 @@
+<html>
+  <head>
+  	 <script>
+  	 	 function writeToLocal() {
+  	 	 	 var content = document.getElementById("fName").value;
+  	 	 	 localStorage.setItem("fName", content);
+  	 	 }
+  	 	 function readFromLocal() {
+  	 	 	 var fNameReceived = localStorage.getItem("fName");
+  	 	 	 document.getElementById("msg1").innerHTML = fNameReceived;
+  	 	 }
+  	 	 function writeToSession(){
+  	 	 	  var content = document.getElementById("lName").value;
+  	 	 	  sessionStorage.setItem("lName", content);
+  	 	 }
+  	 	 function readFromSession() {
+  	 	 	  var lNameReceived = sessionStorage.getItem("lName");
+  	 	 	  document.getElementById("msg2").innerHTML = lNameReceived;
+  	 	 }
+  	 </script>
+  </head>
+  <body>
+  	  <input type="text" placeholder="Enter First Name" id="fName" />  <span id="msg1">  </span>   <br><br>
+  	  <button onclick="writeToLocal()"> Store Data In LocalStorage area </button>
+  	  <button onclick="readFromLocal()"> Get Data from LocalStorage area </button>
+
+  	  <br><br><hr><br>
+
+  	  <input type="text" placeholder="Enter Last Name" id="lName" /> <span id="msg2">  </span>  <br><br>
+
+  	  <button onclick="writeToSession()"> Store Data in SessionStorage area </button>
+  	  <button onclick="readFromSession()"> Get Data from SessionStorage area </button>
+  </body>
+</html>

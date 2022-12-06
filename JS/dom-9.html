@@ -1,0 +1,24 @@
+<html>
+  <head>
+  	 <script>
+  	 	 function write(){
+  	 	 	document.getElementsByTagName("h3")[0].innerHTML = "hi hello";
+  	 	 }
+  	 	 function enableEvents(){
+    	      document.getElementById("btn").addEventListener("mouseover", function(){
+    	      		 write();
+    	      })
+  	 	 }
+  	 </script>
+  </head>
+  <body>
+  	  <h3>  </h3>
+
+  	  <button id="btn"> Click me </button>
+
+  	  <br><br>
+
+  	  <hr>
+  	  <button onclick="enableEvents()"> Enable Events </button>
+  </body>
+</html>

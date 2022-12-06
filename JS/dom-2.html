@@ -1,0 +1,26 @@
+<html>
+  <head>
+  	 <style>
+  	 	 div {
+  	 	 	width:300px;
+  	 	 	height:200px;
+  	 	 	border:2px solid red;
+  	 	 }
+  	 </style>
+  	 <script>
+  	 	 function apply(elem) {
+  	 	 	 elem.style.background = "orange";
+  	 	 }
+  	 	 function remove(elem) {
+  	 	 	 elem.style.background = "";
+  	 	 }
+  	 </script>
+  </head>
+  <body>
+  	  <h2> Demo on mouse events in javascript </h2>
+
+  	  <div onmouseover="apply(this)" onmouseout="remove(this)">
+
+  	  </div>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+  <head>
+  	 <script>
+  	 	 function validate(elem){
+  	 	 	 var content = elem.value;
+  	 	 	 var contentLength =  content.length;
+  	 	 	 var elem = document.getElementById("msg");
+  	 	 	 if(contentLength <= 5){
+  	 	 	 	 elem.innerHTML = "Strength is week";
+  	 	 	 	 elem.style.color = "Red";
+  	 	 	 }else if(contentLength <= 10){
+  	 	 	 	 elem.innerHTML = "Strength is moderate";
+  	 	 	 	 elem.style.color = "yellow";
+  	 	 	 }else{
+  	 	 	 	 elem.innerHTML = "Strength is strong";
+  	 	 	 	 elem.style.color = "green";
+  	 	 	 }
+  	 	 }
+  	 </script>
+  </head>
+  <body>
+  	  <h2> Demo on key up event handler </h2>
+
+  	  <input type="text" onkeyup="validate(this)" placeholder="Enter UserName" />  
+  	  <span id="msg">  </span>
+  </body>
+</html>
